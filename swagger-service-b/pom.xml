@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.4.RELEASE</version>
+		<version>1.5.10.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.eureka</groupId>
-	<artifactId>client</artifactId>
+	<groupId>com.zuul</groupId>
+	<artifactId>swagger-service-b</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eureka-client</name>
+	<name>swagger-service-b</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,21 +19,21 @@
 	</properties>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!--<dependency>-->
-		<!--<groupId>org.springframework.boot</groupId>-->
-		<!--<artifactId>spring-boot-starter-actuator</artifactId>-->
-		<!--</dependency>-->
+
+		<dependency>
+			<groupId>com.spring4all</groupId>
+			<artifactId>swagger-spring-boot-starter</artifactId>
+			<version>1.7.0.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
